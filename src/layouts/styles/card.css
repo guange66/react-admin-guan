@@ -1,0 +1,36 @@
+.card-layout {
+  /* 应用布局&布局设置 */
+}
+.card-layout .ant-menu {
+  font-size: 16px;
+}
+.card-layout.full-layout .router-page,
+.card-layout.full-layout .router-page > .ant-layout {
+  min-height: calc(100vh - 48px);
+}
+.card-layout.full-layout .router-page > .ant-layout-content,
+.card-layout.full-layout .router-page > .ant-layout > .ant-layout-content {
+  overflow: auto;
+}
+.card-layout.full-layout.fixed.ant-layout,
+.card-layout.full-layout.fixed .full-layout.ant-layout {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.card-layout.full-layout:not(.fixed).card-layout.full-layout.fixed-header > .ant-layout-header {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  right: 0;
+}
+.card-layout.full-layout:not(.fixed).card-layout.full-layout.fixed-header > .ant-layout-content {
+  padding-top: 46px;
+  overflow: auto;
+}
+.card-layout .request-fullscreen {
+  line-height: 45px;
+  font-size: 1.2vw;
+}
